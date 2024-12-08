@@ -1,0 +1,43 @@
+
+.text--animate {
+    animation: animatetext 4s linear infinite alternate;
+}
+
+@keyframes animatetext {
+    0% {
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+
+
+.text--animates {
+    animation: textanimate 1.5s  infinite  linear alternate;
+    overflow: hidden;
+    width: 0;
+    white-space: nowrap;
+
+}
+@keyframes textanimate {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+::-webkit-scrollbar {
+    background-color: #343a40;
+    width: 20px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #00a3e1;
+    border-radius: 15px;
+}
+.input {
+    width: 450px;
+}
